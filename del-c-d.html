@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Np9Ma — Del C &amp; D</title>
+<style>
+  :root {
+    --bg: #fafaf9;
+    --fg: #18181b;
+    --muted: #71717a;
+    --border: #e4e4e7;
+    --surface: #ffffff;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0a0a0a;
+      --fg: #fafafa;
+      --muted: #a1a1aa;
+      --border: #27272a;
+      --surface: #161616;
+    }
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; height: 100%; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", Roboto, sans-serif;
+    background: var(--bg);
+    color: var(--fg);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    -webkit-font-smoothing: antialiased;
+  }
+  header {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: .875rem 1.25rem;
+    background: var(--surface);
+    border-bottom: 1px solid var(--border);
+  }
+  .back {
+    display: inline-flex;
+    align-items: center;
+    gap: .5rem;
+    color: var(--fg);
+    text-decoration: none;
+    font-size: .9375rem;
+    font-weight: 500;
+    padding: .5rem .75rem;
+    border-radius: 8px;
+    transition: background .2s ease;
+  }
+  .back:hover { background: var(--bg); }
+  .title {
+    font-size: .9375rem;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+  }
+  .title span { color: var(--muted); font-weight: 400; }
+  .download {
+    color: var(--muted);
+    text-decoration: none;
+    font-size: .875rem;
+    padding: .5rem .75rem;
+    border-radius: 8px;
+    transition: background .2s ease, color .2s ease;
+  }
+  .download:hover { background: var(--bg); color: var(--fg); }
+  main {
+    flex: 1;
+    min-height: 0;
+    background: var(--bg);
+  }
+  iframe, embed {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    display: block;
+  }
+  @media (max-width: 520px) {
+    .title span { display: none; }
+  }
+</style>
+</head>
+<body>
+  <header>
+    <a class="back" href="index.html">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+      Tillbaka
+    </a>
+    <div class="title">Del C &amp; D <span>· Np9Ma 2025/2026</span></div>
+    <a class="download" href="Np9Ma%202025%202026%20del%20C%20och%20D.pdf" download>Ladda ner</a>
+  </header>
+  <main>
+    <embed src="Np9Ma%202025%202026%20del%20C%20och%20D.pdf#view=FitH" type="application/pdf" />
+  </main>
+</body>
+</html>
